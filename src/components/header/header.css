@@ -1,0 +1,97 @@
+/*clearfix -> global css e ekle*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.header{
+    height: 100px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.headerContent{
+    padding: 0;
+    background-color: #1c86ee;
+    height: 50px;
+}
+
+.headerContentDemo .headerParag, .headerContentDemoSecond .headerParag{
+    margin: 0;
+    height: 50px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    width: 50%;
+}
+
+.headerContentDemo .headerParag{
+    float: left;
+}
+.headerContentDemo, .headerContentDemoSecond{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.headerContentSecond{
+    padding: 0;
+    background-color: #1c1c1c;
+    height: 50px;
+}
+
+.headerContentDemoSecond p{
+    font-size: 16px !important;
+}
+
+.list{
+    float: right;
+    height: 50px;
+    margin: 0;
+}
+
+.listElementHeader{
+    list-style-type: none;
+    float: left;
+    padding-left: 16px;
+    margin: 14px 0;
+}
+
+.headerLogIn{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 10px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.headerFree{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 10px;
+    margin-top: 3px;
+    color: white;
+    border: 1px solid black;
+    background-color: black;
+    padding: 7px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+@media (max-width: 699px){
+    .headerContentDemo .headerParag, .headerContentDemoSecond .headerParag{
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .list{
+        display: none;
+    }
+
+}

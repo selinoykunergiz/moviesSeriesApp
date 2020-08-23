@@ -1,0 +1,19 @@
+.mediaItem img{
+    width: 150px;
+    height: 225px;
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: black;
+}
+
+.mediaItem label{
+    display: block;
+}
+
+.mediaItem{
+    width: 174px;
+    float: left;
+    height: 300px;
+    text-align: center;
+    position: relative;
+}

@@ -1,0 +1,33 @@
+.mediaItem img{
+    width: 190px;
+    height: 220px;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.mediaItem label{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.mediaItem{
+    width: 200px;
+    float: left;
+    height: 300px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.mediaItem span {
+    display: none;
+    position: absolute;
+    top: 40%;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #FFF;
+    width: 100%;
+}
+.mediaItem:hover span {
+    display: block;
+}

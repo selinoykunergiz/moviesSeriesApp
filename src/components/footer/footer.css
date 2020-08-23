@@ -1,0 +1,88 @@
+/*clearfix -> global css e ekle*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.footer{
+    position: fixed;
+    padding: 10px 0;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #1c1c1c;
+}
+
+.footerContent, .footerContentSecond{
+    max-width: 1600px;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.footerContentList{
+    list-style-type: none;
+    padding: 0;
+}
+
+.listElement{
+    border-right: 1px solid #9c9c9c;
+    float: left;
+    text-align: center;
+    padding: 0 6px;
+}
+
+.listElement:last-of-type{
+    border-right: none;
+}
+
+.listElement a{
+    font-size: 14px;
+    color: #9c9c9c;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.footerParag{
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #9c9c9c;
+    padding-left: 10px;
+}
+
+.listElementSocial{
+    list-style-type: none;
+    float: left;
+    padding-right: 17px;
+}
+
+.listElementSocial img{
+    height: 25px;
+}
+
+.footerContentSocial{
+    padding-left: 22px;
+    width: 50%;
+    float: left;
+}
+
+.listElementStore{
+    list-style-type: none;
+    float: right;
+    padding-right: 25px;
+}
+
+.listElementStore img{
+    height: 40px;
+}
+
+@media (max-width: 699px){
+    .listElement{
+        width: 100%;
+    }
+}
